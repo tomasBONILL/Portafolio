@@ -13,7 +13,7 @@ function Projects() {
       titulo: "Seven",
       descripcion:
         "Un proyecto donde me aventuré en el uso de base de datos y creación del sitio web. Fue mi primera vez trabajando en equipo un código.",
-      imagen: "/img/seven.png",
+      imagen: "/img/SEVEN.png",
       link: "https://github.com/tomasBONILL/SevenProyect",
     },
     {
