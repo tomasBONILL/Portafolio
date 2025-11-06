@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+:root {
+  --morado: #000000;
+  --card-morado: #6e2b27;
+  --acento: #00a2ff;
+  --texto: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app-fondo {
+  background-color: var(--morado);
+  color: var(--texto);
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Opcional: contenedor para centrar contenido y dar padding */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(80px);
+}
+.project-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.project-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}

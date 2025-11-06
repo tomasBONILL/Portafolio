@@ -1,0 +1,87 @@
+.about-me {
+  background-color: #000000;
+  color: white;
+  padding: 80px 10%;
+  font-family: 'Orbitron', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  object-fit: cover;
+ }
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.titulo {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.descripcion {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+/* 🖥️ Ajuste para pantallas más pequeñas o medianas */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 280px;
+  }
+
+  .titulo {
+    font-size: 3rem;
+  }
+
+  .descripcion {
+    font-size: 1.2rem;
+  }
+}
+
+.about-me .titulo {
+  font-size: 6rem; 
+  color: #fffffF;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.about-me .descripcion {
+  color: #fffffF;
+}
+
+.about-image {
+  width: 400px;           /* ancho fijo — cambia el tamaño si quieres */
+  height: 400px;          /* alto igual al ancho para círculo perfecto */
+  border-radius: 50%;     /* esto hace el círculo */
+  object-fit: cover;      /* recorta la imagen sin deformarla */
+  display: block;
+  overflow: hidden;
+  border: 4px solid #000000; /* opcional: borde visible */
+}
+
+

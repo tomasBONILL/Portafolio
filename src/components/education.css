@@ -1,0 +1,50 @@
+.education {
+  background-color: #000000; /* morado oscuro */
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 6rem; 
+  color: #fffffF;
+  margin-bottom: 6rem; 
+  letter-spacing: 2px;
+}
+
+.education-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education-item {
+  background-color: #2a0e0e;
+  border-radius: 15px;
+  padding: 25px;
+  transition: 0.3s ease;
+}
+
+.education-item:hover {
+  background-color: rgba(86, 80, 195, 0.2);
+  transform: translateY(-5px);
+}
+
+.education-item h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.periodo {
+  color: #7b7c7c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.detalle {
+  color: #dcdcdc;
+  line-height: 1.5;
+}
