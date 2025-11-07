@@ -175,7 +175,7 @@ function Projects() {
               Mi investigación 🎓
             </h3>
             <p style={paragraphStyle}>
-              Este trabajo lo realicé en grupo con compañeros de la academia sabatina...
+              Este trabajo, lo realizé en grupo con compañeros de la academia sabatina ASAB de la universidad Dr. José Matias Delgado, como parte de una investigación realizada durante 3 años dentro del programa. Abordamos el tema principal de la violencia en el hogar de estudiantes de sexto grado, tomando como muestra niños de el centro escolar Arturo Ambrogi. Este documento contiene nuestros hallasgos y resultados. Fue un trabajo arduo y largo pero sin duda nuevo y retador donde aprendí mucho de la investigación y comunicación.
             </p>
             <a
               href="/doc/G3proyecto.pdf"
