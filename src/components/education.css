@@ -1,19 +1,19 @@
 .education {
-  background-color: #000000; /* morado oscuro */
+  background-color: #000000;
   color: #fff;
   padding: 80px 20px;
   text-align: center;
 }
 
 .titulo {
-  font-size: 6rem; 
-  color: #fffffF;
-  margin-bottom: 6rem; 
+  font-size: clamp(2rem, 6vw, 6rem); /* se adapta automáticamente */
+  color: #ffffff;
+  margin-bottom: 4rem;
   letter-spacing: 2px;
 }
 
 .education-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,7 @@
   border-radius: 15px;
   padding: 25px;
   transition: 0.3s ease;
+  text-align: left;
 }
 
 .education-item:hover {
@@ -34,7 +35,7 @@
 
 .education-item h3 {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   margin-bottom: 10px;
 }
 
@@ -42,9 +43,65 @@
   color: #7b7c7c;
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .detalle {
   color: #dcdcdc;
   line-height: 1.5;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .education {
+    padding: 60px 15px;
+  }
+
+  .titulo {
+    margin-bottom: 3rem;
+  }
+
+  .education-container {
+    gap: 20px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .education {
+    padding: 40px 10px;
+  }
+
+  .titulo {
+    font-size: clamp(1.8rem, 8vw, 3rem);
+    margin-bottom: 2rem;
+  }
+
+  .education-item {
+    padding: 20px;
+  }
+}
+
+/* Teléfonos muy pequeños */
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  .education-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .periodo {
+    font-size: 0.85rem;
+  }
+
+  .detalle {
+    font-size: 0.85rem;
+  }
 }
