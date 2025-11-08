@@ -18,21 +18,20 @@ function Inicio() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
- const scrollToSection = (id) => {
-  if (id.toLowerCase() === "inicio") {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    return;
-  }
+  const scrollToSection = (id) => {
+    if (id.toLowerCase() === "inicio") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
 
-  const section = document.getElementById(id);
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-  }
-};
-
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
-    <section className="inicio">
+    <section className="inicio" id="inicio">
       <div className="overlay"></div>
       <div className="contenido">
         <div className="perfil">
@@ -40,9 +39,8 @@ function Inicio() {
         </div>
         <h1 className="nombre">TOMÁS BONILLA</h1>
 
-
         <div className={`botones ${isSticky ? "sticky" : ""}`}>
-          <button onClick={() => scrollToSection("Inicio")}>INICIO</button>
+          <button onClick={() => scrollToSection("inicio")}>INICIO</button>
           <button onClick={() => scrollToSection("about")}>ACERCA DE MI</button>
           <button onClick={() => scrollToSection("education")}>FORMACIÓN</button>
           <button onClick={() => scrollToSection("projects")}>PROYECTOS</button>
