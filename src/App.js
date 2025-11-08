@@ -5,6 +5,7 @@ import AboutMe from "./components/aboutMe";
 import Contact from "./components/contact";
 import Education from "./components/education";
 import Certis from "./components/certis";
+import Footer from "./components/footer";
 import "./App.css";
 
 function App() {
@@ -16,9 +17,9 @@ function App() {
       <Projects />
       <Certis />
       <Contact />
+      <Footer/>
     </div>
   );
 }
 
 export default App;
-
