@@ -16,101 +16,72 @@
   gap: 60px;
   max-width: 1200px;
   width: 100%;
-  flex-wrap: wrap; /* permite que se acomode en pantallas pequeñas */
-}
-
-.about-image {
-  width: clamp(180px, 30vw, 400px); /* adaptable a pantalla */
-  aspect-ratio: 1 / 1;              /* cuadrado perfecto */
-  border-radius: 50%;               /* círculo */
-  overflow: hidden;
-  border: 4px solid #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .about-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;       /* llena el círculo sin deformarse */
-  object-position: center; /* centra la imagen */
-  display: block;
-}
-
-
+  max-width: 400px; 
+  height: auto;
+  object-fit: cover;
+ }
 
 .about-text {
   flex: 1;
   text-align: left;
 }
 
-.about-me .titulo {
-  font-size: clamp(2rem, 6vw, 6rem); /* se adapta automáticamente */
+.titulo {
+  font-size: 4rem;
   margin-bottom: 20px;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
-.about-me .descripcion {
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
+.descripcion {
+  font-size: 1.3rem;
   line-height: 1.8;
   color: #e0e0e0;
 }
 
-/* ========================= */
-/* 📱 RESPONSIVE DESIGN */
-/* ========================= */
-
-/* Tablets */
+/* 🖥️ Ajuste para pantallas más pequeñas o medianas */
 @media (max-width: 1024px) {
   .about-content {
     flex-direction: column;
     text-align: center;
-    gap: 40px;
   }
 
-  .about-text {
-    text-align: center;
-  }
-
-  .about-image {
+  .about-image img {
     max-width: 280px;
   }
-}
 
-/* Móviles */
-@media (max-width: 768px) {
-  .about-me {
-    padding: 60px 5%;
+  .titulo {
+    font-size: 3rem;
   }
 
-  .about-me .titulo {
-    font-size: clamp(1.8rem, 8vw, 3rem);
-  }
-
-  .about-me .descripcion {
-    font-size: 1rem;
+  .descripcion {
+    font-size: 1.2rem;
   }
 }
 
-/* Teléfonos muy pequeños */
-@media (max-width: 480px) {
-  .about-me {
-    padding: 40px 5%;
-  }
-
-  .about-me .titulo {
-    font-size: 1.6rem;
-  }
-
-  .about-me .descripcion {
-    font-size: 0.95rem;
-  }
-
-  .about-image {
-    max-width: 200px;
-  }
+.about-me .titulo {
+  font-size: 6rem; 
+  color: #fffffF;
+  letter-spacing: 2px;
+  text-align: left;
 }
+
+.about-me .descripcion {
+  color: #fffffF;
+}
+
+.about-image {
+  width: 400px;           /* ancho fijo — cambia el tamaño si quieres */
+  height: 400px;          /* alto igual al ancho para círculo perfecto */
+  border-radius: 50%;     /* esto hace el círculo */
+  object-fit: cover;      /* recorta la imagen sin deformarla */
+  display: block;
+  overflow: hidden;
+  border: 4px solid #000000; /* opcional: borde visible */
+}
+
 
