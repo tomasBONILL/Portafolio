@@ -13,7 +13,9 @@ function Footer() {
           <a href="https://www.instagram.com/tomxsbo_/" target="_blank" rel="noopener noreferrer">
             Instagram
           </a>
-          <a href="#contact">Contáctame</a>
+         <a href="https://www.instagram.com/tomxsbo_/" target="_blank" rel="noopener noreferrer">
+            Linkedin
+          </a>
         </div>
       </div>
     </footer>
